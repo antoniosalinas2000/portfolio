@@ -13,6 +13,15 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        'asr-green' : '#00E79B',
+        'asr-blue' : '#82D2FF',
+        'asr-purple' : '#9082FF',
+      },
+      fontFamily: {
+        'lexend': ['var(--font-lexend)'],
+        'iceland': ['var(--font-iceland)'],
+      },
     },
   },
   plugins: [],
