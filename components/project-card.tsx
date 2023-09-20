@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function ProjectCard(props: { title: string, description: string, image: string, url?: string}) {
     return (
         <a href={props.url} target="_blank" rel="noopener noreferrer" className="block">
-        <div className="h-full flex flex-col items-center justify-center gap-y-3 border bg-asr-green/10 border-asr-green rounded-lg w-[400px] flex-shrink-0 cursor-pointer">
+        <div className={(props.url ? 'cursor-pointer ' : ' ') + `h-full flex flex-col items-center justify-center gap-y-3 border bg-asr-green/10 border-asr-green rounded-lg w-[400px] flex-shrink-0`}>
             <div className="flex flex-row items-center justify-center w-full">
                 <Image src={props.image} width={400} height={200} alt="project" className="object-contain rounded-t-lg" />
             </div>

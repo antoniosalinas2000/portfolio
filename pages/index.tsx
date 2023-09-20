@@ -45,7 +45,7 @@ export default function Home() {
             <ProjectCard title="Trippio" description="Diseñamos y desarollamos nuestra plataforma Trippio, una plataforma web que genera Itinerarios de Viaje con Inteligencia Artificial" image="/assets/projects/trippio.png" url="https://trippio.ai" />
             <ProjectCard title="USE - W&T" description="Diseño y desarrollo de una plataforma web para empleadores estadounidenses que genere Training Plans con Inteligencia Artificial." image="/assets/projects/use.png" />
             <ProjectCard title="SimpliCAR" description='Rediseño de landing page enfocado en los lineamientos de “Design for trust” de AirBNB. Identificación de componentes necesarios y desarrollo de landing.' image="/assets/projects/simplicar.png" url="https://simplicar.pe/" />
-            <ProjectCard title="Unity 2D Demo" description='Desarrollo de demo de videojuego 2D en Unity.' image="/assets/projects/tzegarra.png" />
+            <ProjectCard title="Unity 2D Demo" description='Desarrollo de demo de videojuego 2D en Unity.' image="/assets/projects/tzegarra.png" url="https://drive.google.com/file/d/14Mrvjfj_uJeKfK_VfAZzU2AsqAxMq6CL/view?usp=drive_link" />
             <ProjectCard title="Unity 3D Demo" description='Desarrollo de demo de videojuego 3D en Unity.' image="/assets/projects/toylo.png" />
           </div>
         </div>
