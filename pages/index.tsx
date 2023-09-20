@@ -1,12 +1,14 @@
 import Image from 'next/image'
 import Header from '../components/header'
 import { PaperAirplaneIcon } from '@heroicons/react/24/outline'
+import ProjectCard from '@/components/project-card'
 
 export default function Home() {
   return (
     <main
       className="flex min-h-screen flex-col items-center justify-start">
       <Header />
+      {/*First view */}
       <div className="flex flex-row w-full py-8">
         {/*Titulos, descripción */}
         <div className="flex flex-col w-full px-16 gap-y-8">
@@ -30,7 +32,18 @@ export default function Home() {
         {/*HeroImage */}
         <div className="flex flex-col w-full px-16 items-center justify-center">
           <Image src="/assets/heroImage.svg" width={700} height={500} alt="hero" />
-
+        </div>
+      </div>
+      <div className="flex flex-row w-full py-8 items-center">
+        <div className="flex flex-col w-fit -rotate-90">
+          <p className="text-6xl font-iceland text-asr-green">Proyectos</p>
+        </div>
+        <div className="flex flex-row w-full gap-x-3 overflow-x-scroll mt-6">
+          <ProjectCard title="Trippio" description="Diseñamos y desarollamos nuestra plataforma Trippio, una plataforma web que genera Itinerarios de Viaje con Inteligencia Artificial" image="/assets/projects/trippio.png" />
+          <ProjectCard title="USE - W&T" description='Rediseño de landing page enfocado en los lineamientos de “Design for trust” de AirBNB. Identificación de componentes necesarios y desarrollo de landing.' image="/assets/projects/use.png" />
+          <ProjectCard title="SimpliCAR" description="Diseño y desarrollo de una plataforma web para empleadores estadounidenses que genere Training Plans con Inteligencia Artificial." image="/assets/projects/use.png" />
+          <ProjectCard title="SimpliCAR" description="Diseño y desarrollo de una plataforma web para empleadores estadounidenses que genere Training Plans con Inteligencia Artificial." image="/assets/projects/use.png" />
+          <ProjectCard title="SimpliCAR" description="Diseño y desarrollo de una plataforma web para empleadores estadounidenses que genere Training Plans con Inteligencia Artificial." image="/assets/projects/use.png" />
         </div>
       </div>
 
