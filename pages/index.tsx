@@ -11,10 +11,10 @@ export default function Home() {
       className="flex min-h-screen flex-col items-center justify-start bg-black">
       <Header />
       {/*First view */}
-      <div className="flex flex-row w-full py-8">
+      <div className="flex flex-col lg:flex-row w-full py-8">
         {/*Titulos, descripción */}
         <div className="flex flex-col w-full px-16 gap-y-8">
-          <h1 className="text-6xl font-lexend font-semibold w-[450px]">
+          <h1 className="text-6xl font-lexend font-semibold w-full lg:w-[450px]">
             <span className="text-asr-green">Diseño</span> y <span className="text-asr-purple">desarollo</span> Web... y más</h1>
           <p className="text-3xl font-iceland text-white/50 w-full">Transformando Ideas en Experiencias Digitales...
           </p>
@@ -32,16 +32,16 @@ export default function Home() {
           </div>
         </div>
         {/*HeroImage */}
-        <div className="flex flex-col w-full px-16 items-center justify-center">
+        <div className="hidden lg:flex flex-col w-full px-16 items-center justify-center">
           <Image src="/assets/heroImage.svg" width={700} height={500} alt="hero" />
         </div>
       </div>
       <div className='flex flex-col w-full border-y'>
-        <div className="flex flex-row w-full py-8 items-center">
+        <div className="flex flex-col lg:flex-row w-full py-8 items-center">
           <div className="flex flex-col w-60 items-center">  {/* Set a fixed width here */}
-            <p className="text-6xl font-iceland text-asr-green -rotate-90 block">Proyectos</p>
+            <p className="text-6xl font-iceland text-asr-green lg:-rotate-90 block">Proyectos</p>
           </div>
-          <div className="flex flex-row gap-x-3 overflow-x-scroll my-6 mr-28 ">
+          <div className="flex flex-col lg:flex-row gap-x-3 lg:overflow-x-scroll my-6 lg:mr-28 gap-y-4">
             <ProjectCard title="Trippio" description="Diseñamos y desarollamos nuestra plataforma Trippio, una plataforma web que genera Itinerarios de Viaje con Inteligencia Artificial" image="/assets/projects/trippio.png" url="https://trippio.ai" />
             <ProjectCard title="USE - W&T" description="Diseño y desarrollo de una plataforma web para empleadores estadounidenses que genere Training Plans con Inteligencia Artificial." image="/assets/projects/use.png" />
             <ProjectCard title="SimpliCAR" description='Rediseño de landing page enfocado en los lineamientos de “Design for trust” de AirBNB. Identificación de componentes necesarios y desarrollo de landing.' image="/assets/projects/simplicar.png" url="https://simplicar.pe/" />
@@ -50,11 +50,11 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex flex-row w-full py-8 items-center">
+        <div className="flex flex-col lg:flex-row w-full py-8 items-center">
           <div className="flex flex-col w-60 items-center">  {/* Set a fixed width here */}
-            <p className="text-6xl font-iceland w-60 text-asr-purple -rotate-90 block">Skills</p>
+            <p className="text-6xl font-iceland lg:w-60 text-asr-purple lg:-rotate-90 block">Skills</p>
           </div>
-          <div className="flex flex-row gap-x-3 mt-6 mr-28">
+          <div className="flex flex-col lg:flex-row gap-x-3 mt-6 lg:mr-28 gap-y-4">
             <SkillCard title="Lenguajes" description={["Typescript / Javascript", "HTML / CSS", "C++ - Intermedio", "C# - Intermedio", "Python - Intermedio", "Java - Básico"]} image="/assets/skills/web.svg" />
             <SkillCard title="Diseño" description={["UI/UX - Figma", "Animación 3D - Blender"]} image="/assets/skills/design.svg" />
             <SkillCard title="Desarrollo" description={["Frontend - Angular & NextJS", "Backend - NodeJS Express", "Videojuegos - Unity3D"]} image="/assets/skills/development.svg" />
@@ -62,11 +62,11 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex flex-row w-full py-8 items-center">
+        <div className="flex flex-col lg:flex-row w-full py-8 items-center">
           <div className="flex flex-col w-60 items-center">  {/* Set a fixed width here */}
-            <p className="text-6xl font-iceland text-asr-blue -rotate-90 block">Experiencia</p>
+            <p className="text-6xl font-iceland text-asr-blue lg:-rotate-90 block">Experiencia</p>
           </div>
-          <div className="flex flex-row gap-x-3 overflow-x-scroll my-6 mr-28 ">
+          <div className="flex flex-col lg:flex-row gap-x-3 lg:overflow-x-scroll my-6 lg:mr-28 gap-y-4">
             <ExperienceCard title="Trippio"
               jobTitle='CEO & Co-Founder'
               description="Co-fundador y CEO de Trippio, liderando la conceptualización y puesta en marcha de la plataforma. Colaboré activamente en el desarrollo full-stack utilizando Next.js en el frontend y Express con Node.js en el backend, todo implementado con TypeScript."
@@ -99,8 +99,6 @@ export default function Home() {
       <div className='flex flex-col items-center text-center w-full py-8'>
         <p className='text-6xl font-iceland'>Contacto</p>
       </div>
-
-
     </main>
   )
 }
