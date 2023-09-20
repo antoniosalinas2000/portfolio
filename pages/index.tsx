@@ -8,7 +8,7 @@ import ExperienceCard from '@/components/experience'
 export default function Home() {
   return (
     <main
-      className="flex min-h-screen flex-col items-center justify-start">
+      className="flex min-h-screen flex-col items-center justify-start bg-black">
       <Header />
       {/*First view */}
       <div className="flex flex-row w-full py-8">
