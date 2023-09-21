@@ -8,8 +8,9 @@ import ExperienceCard from '@/components/experience'
 export default function Home() {
   return (
     <main
+      id='home'
       className="flex min-h-screen flex-col items-center justify-start bg-black text-white">
-      <Header />
+      <Header currentPage="Inicio" />
       {/*First view */}
       <div className="flex flex-col lg:flex-row w-full py-8">
         {/*Titulos, descripción */}
@@ -70,34 +71,48 @@ export default function Home() {
             <ExperienceCard title="Trippio"
               jobTitle='CEO & Co-Founder'
               description="Co-fundador y CEO de Trippio, liderando la conceptualización y puesta en marcha de la plataforma. Colaboré activamente en el desarrollo full-stack utilizando Next.js en el frontend y Express con Node.js en el backend, todo implementado con TypeScript."
-              image="/assets/experience/trippio.png" 
-              date="Agosto 2023 – Presente"/>
+              image="/assets/experience/trippio.png"
+              date="Agosto 2023 – Presente" />
             <ExperienceCard title="TalentHub"
               jobTitle='FrontEnd Developer'
               description="Coordinación y desarrollo de soluciones front-end innovadoras para la plataforma de reclutamiento TalentHub, utilizando Angular como Framework."
-              image="/assets/experience/talentHub.png" 
-              date="Agosto 2023 – Presente"/>
+              image="/assets/experience/talentHub.png"
+              date="Agosto 2023 – Presente" />
             <ExperienceCard title="Visma Latam"
               jobTitle='QA Automation Engineer'
               description="Planificación, desarrollo y ejecución de pruebas automatizadas E2E con Selenium y scripts en Java. Y, automatización de pruebas de API, con Postman, integradas a Jenkins para la integración continua. Líder de un equipo de 3 personas."
-              image="/assets/experience/visma.png" 
-              date="Agosto 2022 – Agosto 2023"/>
+              image="/assets/experience/visma.png"
+              date="Agosto 2022 – Agosto 2023" />
             <ExperienceCard title="BCP"
               jobTitle='Trainee - CIX'
-              description="Análisis de datos. Recolección de insights por parte de los usuarios Warda - plataforma del Centro de Innovación (CIX). Participación en el proceso de ideación de estrategias y posibles oportunidades de crecimiento apoyadas en medios digitales." 
-              image="/assets/experience/bcp.png" 
-              date="Agosto 2021 – Diciembre 2021"/>
-              <ExperienceCard title="AYO"
+              description="Análisis de datos. Recolección de insights por parte de los usuarios Warda - plataforma del Centro de Innovación (CIX). Participación en el proceso de ideación de estrategias y posibles oportunidades de crecimiento apoyadas en medios digitales."
+              image="/assets/experience/bcp.png"
+              date="Agosto 2021 – Diciembre 2021" />
+            <ExperienceCard title="AYO"
               jobTitle='Trainee'
-              description="Apoyo en la gestión del desarrollo de producto, realizando un seguimiento constante al equipo de programación y diseño, para asegurar el óptimo funcionamiento de la plataforma web y una buena experiencia de usuario." 
-              image="/assets/experience/ayo.jpeg" 
-              date="Octubre 2018 – Mayo 2020"/>
+              description="Apoyo en la gestión del desarrollo de producto, realizando un seguimiento constante al equipo de programación y diseño, para asegurar el óptimo funcionamiento de la plataforma web y una buena experiencia de usuario."
+              image="/assets/experience/ayo.jpeg"
+              date="Octubre 2018 – Mayo 2020" />
           </div>
         </div>
 
       </div>
-      <div className='flex flex-col items-center text-center w-full py-8'>
+      <div className='flex flex-col items-center text-center w-full py-8 gap-y-6'>
         <p className='text-6xl font-iceland'>Contacto</p>
+        <div className='flex flex-row gap-x-6'>
+          <a href="mailto:antonio@trippio.ai" target="_blank" rel="noopener noreferrer">
+            <Image src="/assets/socials/gmail.svg" width={50} height={50} alt="gmail" />
+          </a>
+          <a href="https://www.linkedin.com/in/antonio-salinas2000/" target="_blank" rel="noopener noreferrer">
+            <Image src="/assets/socials/linkedin.svg" width={50} height={50} alt="linkedin" />
+          </a>
+          <a href="https://github.com/antoniosalinas2000" target="_blank" rel="noopener noreferrer">
+            <Image src="/assets/socials/github.svg" width={50} height={50} alt="github" />
+          </a>
+          <a href="https://www.instagram.com/salinasrocaa" target="_blank" rel="noopener noreferrer">
+            <Image src="/assets/socials/instagram.svg" width={50} height={50} alt="instagram" />
+          </a>
+        </div>
       </div>
     </main>
   )
