@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { CursorArrowRaysIcon } from "@heroicons/react/24/outline";
 
 export default function ProjectCard(props: { title: string, description: string, image: string, url?: string, color: string, left: boolean }) {
     return (

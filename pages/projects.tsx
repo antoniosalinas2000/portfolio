@@ -3,9 +3,18 @@ import Header from '../components/header'
 import ProjectCard from '../components/projects/project-card'
 import { useState } from 'react';
 import DesignCard from '@/components/projects/design-card';
+import { CursorArrowRaysIcon } from "@heroicons/react/24/outline";
 
 export default function Projects() {
   let [projects, setProjects] = useState<string>('Computación');
+
+  function changeProject(){
+    if(projects === "Computación"){
+      setProjects("Diseño");
+    }else{
+      setProjects("Computación");
+    }
+  }
 
   return (
     <main
@@ -14,7 +23,11 @@ export default function Projects() {
       <Header currentPage="Proyectos" />
       {/*First view */}
       <div className="flex flex-col items-center justify-center w-full h-full gap-y-6 py-6">
-        <h1 className="text-2xl lg:text-4xl font-iceland font-semibold">Proyectos de <span onClick={() => setProjects("Computación")} className="text-asr-purple hover:text-asr-orange cursor-pointer" >Computación </span>/ <span onClick={() => setProjects("Diseño")} className="text-asr-green cursor-pointer hover:text-asr-orange" >Diseño</span></h1>
+        <div className="flex flex-row items-center">
+          <h1 className="text-2xl lg:text-4xl font-iceland font-semibold">Proyectos de <span className="text-asr-purple hover:text-asr-orange cursor-pointer" onClick={() => setProjects("Computación")} >Computación </span>/ <span onClick={() => setProjects("Diseño")} className="text-asr-green cursor-pointer hover:text-asr-orange" >Diseño</span></h1>
+          <CursorArrowRaysIcon className="w-8 h-8 stroke-asr-green cursor-pointer hover:stroke-asr-orange" onClick={changeProject} />
+        </div>
+
         {
           projects === "Computación" &&
           <div className='flex flex-col items-center gap-y-4'>
