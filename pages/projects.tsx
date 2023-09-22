@@ -43,7 +43,7 @@ export default function Projects() {
           <div className='flex flex-col items-center gap-y-4'>
             <DesignCard
               image="/assets/projects/toylop.png"
-              cols={2}
+              cols="grid-cols-2"
               width={400}
               title="Toylokazo"
               description="Conceptualización y realización de videos musicales con animaciones 3D para el Toylokazo - albúm musical de JAZE, artista peruano"
@@ -51,7 +51,7 @@ export default function Projects() {
               color="green" />
             <DesignCard
               image="/assets/projects/nigma.png"
-              cols={1}
+              cols="grid-cols-1"
               width={800}
               title="Nigma"
               description="Animación 3D para sustentación de tesis de Nigma - Vehículo"

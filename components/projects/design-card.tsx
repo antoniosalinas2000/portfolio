@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function DesignCard(props: { image:string, title: string, description: string, videos: string[], color: string, width: number, cols: number }) {
+export default function DesignCard(props: { image:string, title: string, description: string, videos: string[], color: string, width: number, cols: string }) {
     return (
             <div className={`flex flex-col items-center justify-start gap-x-4 bg-asr-${props.color}/10 border border-asr-${props.color} rounded-md p-4`}>
 
@@ -13,7 +13,7 @@ export default function DesignCard(props: { image:string, title: string, descrip
 
                 {/* Videos */}
                 <div className="flex flex-col items-center justify-center w-full h-full mt-6">
-                    <div className={`grid grid-cols-${props.cols } gap-4 w-fit h-full`}>
+                    <div className={`grid ${props.cols} gap-4 w-fit h-full`}>
 
                         {props.videos.map((video, index) => (
                             <div key={index} className="video-container flex justify-center items-center">
