@@ -17,6 +17,7 @@ const config: Config = {
         'asr-green' : '#00E79B',
         'asr-blue' : '#82D2FF',
         'asr-purple' : '#9082FF',
+        'asr-orange' : '#FF8F27',
       },
       fontFamily: {
         'lexend': ['var(--font-lexend)'],
