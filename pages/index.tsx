@@ -4,6 +4,7 @@ import { PaperAirplaneIcon } from '@heroicons/react/24/outline'
 import ProjectCard from '@/components/project-card'
 import SkillCard from '@/components/skill-card'
 import ExperienceCard from '@/components/experience'
+import Footer from '@/components/footer'
 
 export default function Home() {
   return (
@@ -95,25 +96,9 @@ export default function Home() {
               date="Octubre 2018 – Mayo 2020" />
           </div>
         </div>
-
       </div>
-      <div className='flex flex-col items-center text-center w-full py-8 gap-y-6'>
-        <p className='text-6xl font-iceland'>Contacto</p>
-        <div className='flex flex-row gap-x-6'>
-          <a href="mailto:antonio@trippio.ai" target="_blank" rel="noopener noreferrer">
-            <Image src="/assets/socials/gmail.svg" width={50} height={50} alt="gmail" />
-          </a>
-          <a href="https://www.linkedin.com/in/antonio-salinas2000/" target="_blank" rel="noopener noreferrer">
-            <Image src="/assets/socials/linkedin.svg" width={50} height={50} alt="linkedin" />
-          </a>
-          <a href="https://github.com/antoniosalinas2000" target="_blank" rel="noopener noreferrer">
-            <Image src="/assets/socials/github.svg" width={50} height={50} alt="github" />
-          </a>
-          <a href="https://www.instagram.com/salinasrocaa" target="_blank" rel="noopener noreferrer">
-            <Image src="/assets/socials/instagram.svg" width={50} height={50} alt="instagram" />
-          </a>
-        </div>
-      </div>
+      
+      <Footer />
     </main>
   )
 }

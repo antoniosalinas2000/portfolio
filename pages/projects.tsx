@@ -4,6 +4,7 @@ import ProjectCard from '../components/projects/project-card'
 import { useState } from 'react';
 import DesignCard from '@/components/projects/design-card';
 import { CursorArrowRaysIcon } from "@heroicons/react/24/outline";
+import Footer from '@/components/footer';
 
 export default function Projects() {
   let [projects, setProjects] = useState<string>('Computación');
@@ -60,6 +61,7 @@ export default function Projects() {
           </div>
         }
       </div>
+      <Footer />
 
     </main>
   )
