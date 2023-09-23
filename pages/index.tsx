@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import Header from '../components/header'
 import { PaperAirplaneIcon } from '@heroicons/react/24/outline'
-import ProjectCard from '@/components/project-card'
-import SkillCard from '@/components/skill-card'
-import ExperienceCard from '@/components/experience'
+import ProjectCard from '@/components/landing/project-card'
+import SkillCard from '@/components/landing/skill-card'
+import ExperienceCard from '@/components/landing/experience'
 import Footer from '@/components/footer'
 import {BsWhatsapp} from 'react-icons/bs'
 
