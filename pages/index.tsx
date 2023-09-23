@@ -17,7 +17,7 @@ export default function Home() {
       <div className="flex flex-col lg:flex-row w-full py-8">
         {/*Titulos, descripción */}
         <div className="flex flex-col w-full px-4 lg:px-16 gap-y-8">
-          <h1 className="text-4xl lg:text-6xl font-lexend font-semibold w-full lg:w-[450px]">
+          <h1 className="text-5xl lg:text-6xl font-lexend font-semibold w-full lg:w-[450px]">
             <span className="text-asr-green">Diseño</span> y <span className="text-asr-purple">Desarollo</span> Web... y <span className="text-asr-orange">más</span></h1>
           <p className="text-3xl font-iceland text-white/50 w-full">Transformando Ideas en Experiencias Digitales...
           </p>
