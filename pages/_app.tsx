@@ -1,5 +1,6 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
+import Head from 'next/head'
 import { Lexend_Deca, Iceland } from 'next/font/google'
 
 const lexend = Lexend_Deca({
@@ -22,10 +23,13 @@ const iceland = Iceland({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <main className={`${lexend.variable} ${iceland.variable}`}>
-      <meta name="description" content="Mi portfolio, ingeniero en Ciencias de la Computación. Programación, Diseño y Animación 3D." />
-      <meta property="og:title" content="Antonio Salinas Roca" />
-      <meta property="og:description" content="Mi portfolio, ingeniero en Ciencias de la Computación. Programación, Diseño y Animación 3D." />
-      <meta property="og:image" content="/assets/heroImage.svg" />
+      <Head>
+        <title>Antonio Salinas Roca</title>
+        <meta name="description" content="Mi portfolio, ingeniero en Ciencias de la Computación. Programación, Diseño y Animación 3D." />
+        <meta property="og:title" content="Antonio Salinas Roca" />
+        <meta property="og:description" content="Mi portfolio, ingeniero en Ciencias de la Computación. Programación, Diseño y Animación 3D." />
+        <meta property="og:image" content="/assets/heroImage.svg" />
+      </Head>
       <Component {...pageProps} />
     </main>
   )
