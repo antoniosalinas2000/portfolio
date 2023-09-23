@@ -13,7 +13,7 @@ export default function DesignCard(props: { image:string, title: string, descrip
 
                 {/* Videos */}
                 <div className="flex flex-col items-center justify-center w-full h-full mt-6">
-                    <div className={`grid ${props.cols} gap-4 w-fit h-full`}>
+                    <div className={`grid ${props.cols} gap-4 w-fit`}>
 
                         {props.videos.map((video, index) => (
                             <div key={index} className="video-container flex justify-center items-center">

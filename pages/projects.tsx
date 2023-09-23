@@ -59,12 +59,12 @@ export default function Projects() {
               videos={["https://www.youtube.com/embed/xr8YvaJnY_w?si=qR_-8x4YsMFllAe0"]}
               color="green" />
             <DesignCard
-              image="/assets/projects/nigma.png"
+              image="/assets/projects/endlessEngines.png"
               cols="grid-cols-1"
               width={800}
-              title="Nigma"
-              description="Animación 3D para sustentación de tesis de Nigma - Vehículo"
-              videos={["https://www.youtube.com/embed/xr8YvaJnY_w?si=qR_-8x4YsMFllAe0"]}
+              title="Endless Engines"
+              description="Animación 3D para concurso online de Pwnisher"
+              videos={["https://www.youtube.com/embed/Vic4uEZUTyw?si=oNmk29RjBFJCA9PW"]}
               color="green" />
           </div>
         }
