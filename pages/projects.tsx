@@ -9,10 +9,10 @@ import Footer from '@/components/footer';
 export default function Projects() {
   let [projects, setProjects] = useState<string>('Computación');
 
-  function changeProject(){
-    if(projects === "Computación"){
+  function changeProject() {
+    if (projects === "Computación") {
       setProjects("Diseño");
-    }else{
+    } else {
       setProjects("Computación");
     }
   }
@@ -25,7 +25,7 @@ export default function Projects() {
       {/*First view */}
       <div className="flex flex-col items-center justify-center w-full h-full gap-y-6 py-6">
         <div className="flex flex-row items-center">
-          <h1 className="text-2xl lg:text-4xl font-iceland font-semibold">Proyectos de <span className="text-asr-purple hover:text-asr-orange cursor-pointer" onClick={() => setProjects("Computación")} >Computación </span>/ <span onClick={() => setProjects("Diseño")} className="text-asr-green cursor-pointer hover:text-asr-orange" >Diseño</span></h1>
+          <h1 className="text-2xl lg:text-4xl font-iceland font-semibold">Proyectos de <span className="text-asr-purple hover:text-asr-orange cursor-pointer" onClick={() => setProjects("Computación")} >Computación </span>/ <span onClick={() => setProjects("Diseño")} className="text-asr-green cursor-pointer hover:text-asr-orange" >Animación</span></h1>
           <CursorArrowRaysIcon className="w-8 h-8 stroke-asr-green cursor-pointer hover:stroke-asr-orange" onClick={changeProject} />
         </div>
 
@@ -49,6 +49,14 @@ export default function Projects() {
               title="Toylokazo"
               description="Conceptualización y realización de videos musicales con animaciones 3D para el Toylokazo - albúm musical de JAZE, artista peruano"
               videos={["https://www.youtube.com/embed/uMKgzVj7aUQ?si=tBeZjDRVJEloWbVZ", "https://www.youtube.com/embed/dX4BcD1K9fU?si=3kPIf00mSt-tzZl2", "https://www.youtube.com/embed/DKw1RkZsOOc?si=5gvSRgwihWhoahdT", "https://www.youtube.com/embed/7b_7uHMg9So?si=T62CPG0wC7KJs1kF"]}
+              color="green" />
+            <DesignCard
+              image="/assets/projects/nigma.png"
+              cols="grid-cols-1"
+              width={800}
+              title="Nigma"
+              description="Animación 3D para sustentación de tesis de Nigma - Vehículo"
+              videos={["https://www.youtube.com/embed/xr8YvaJnY_w?si=qR_-8x4YsMFllAe0"]}
               color="green" />
             <DesignCard
               image="/assets/projects/nigma.png"

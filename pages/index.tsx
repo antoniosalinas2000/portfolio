@@ -5,6 +5,7 @@ import ProjectCard from '@/components/project-card'
 import SkillCard from '@/components/skill-card'
 import ExperienceCard from '@/components/experience'
 import Footer from '@/components/footer'
+import {BsWhatsapp} from 'react-icons/bs'
 
 export default function Home() {
   return (
@@ -28,10 +29,13 @@ export default function Home() {
             Personalidad polifacética y empática, con un creciente interés en inteligencia artificial.
           </p>
 
-          <div className="flex flex-row items-center justify-center bg-white rounded-md gap-x-4 py-3 px-6 w-fit">
-            <p className="font-lexend text-black font-bold">Contactame</p>
-            <PaperAirplaneIcon className="h-6 w-6 stroke-black" />
-          </div>
+          <a href="https://api.whatsapp.com/send?phone=51940299052" target="_blank" rel="noopener noreferrer">
+            <div className="flex flex-row items-center justify-center bg-white rounded-md gap-x-4 py-3 px-6 w-fit">
+              <p className="font-lexend text-black font-bold">Contactame</p>
+              <BsWhatsapp className="h-6 w-6 text-black" />
+            </div>
+          </a>
+
         </div>
         {/*HeroImage */}
         <div className="hidden lg:flex flex-col w-full px-16 items-center justify-center">
@@ -97,7 +101,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      
+
       <Footer />
     </main>
   )
