@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Footer() {
     return (
-        <footer className="flex flex-col items-center justify-center w-full bg-black text-white">
-            <div className='flex flex-col items-center text-center w-full py-8 gap-y-6'>
+        <footer className="bottom-0 flex flex-col items-center justify-center w-full bg-black text-white border-t border-white">
+            <div className='flex flex-col items-center text-center w-full py-4 gap-y-6'>
                 <p className='text-6xl font-iceland'>Contacto</p>
                 <div className='flex flex-row gap-x-6'>
                     <a href="mailto:antonio@trippio.ai" target="_blank" rel="noopener noreferrer">

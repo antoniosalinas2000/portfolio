@@ -18,6 +18,8 @@ const config: Config = {
         'asr-blue' : '#82D2FF',
         'asr-purple' : '#9082FF',
         'asr-orange' : '#FF8F27',
+        'asr-yellow' : '#F0DB4F',
+        'asr-red': '#E23237',
       },
       fontFamily: {
         'lexend': ['var(--font-lexend)'],
