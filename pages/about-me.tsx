@@ -20,13 +20,13 @@ export default function Design() {
             alt="profile"
             className='object-cover'
           />
-          <p className="text-2xl w-auto font-iceland text-asr-green text-start">Estudiante de Ciencias de la Computación (8vo ciclo) en la Universidad Peruana de Ciencias Aplicadas,
+          <p className="text-2xl w-auto font-iceland text-asr-green text-center lg:text-justify">Estudiante de Ciencias de la Computación (8vo ciclo) en la Universidad Peruana de Ciencias Aplicadas,
             con una fuerte pasión por la tecnología y el estudio del comportamiento humano. Experiencia en start-ups,
             centrado en programación, testing y desarrollo de plataformas web y videojuegos.
             Personalidad polifacética y empática, con un creciente interés en inteligencia artificial.</p>
         </div>
         <p className="text-5xl font-iceland text-asr-purple text-center mt-8">Skills</p>
-        <div className='flex flex-col lg:grid lg:grid-cols-4 items-center justify-center gap-x-4 gap-y-4 mt-8'>
+        <div className='grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-x-4 gap-y-4 mt-8'>
           <SkillCard image="/assets/skills/html.svg" title="HTML" level={80} color="bg-asr-orange"/>
           <SkillCard image="/assets/skills/css.svg" title="CSS" level={80} color="bg-asr-blue"/>
           <SkillCard image="/assets/skills/javascript.svg" title="Javascript" level={80} color="bg-asr-yellow"/>
