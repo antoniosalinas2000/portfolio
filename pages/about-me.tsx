@@ -6,7 +6,7 @@ export default function Design() {
     <main
       id='design'
       className="flex min-h-screen flex-col items-center justify-start bg-black text-white">
-      <Header currentPage="Diseño" />
+      <Header currentPage="Sobre mí" />
       {/*First view */}
       
     </main>

@@ -28,7 +28,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="description" content="Mi portfolio, ingeniero en Ciencias de la Computación. Programación, Diseño y Animación 3D." />
         <meta property="og:title" content="Antonio Salinas Roca" />
         <meta property="og:description" content="Mi portfolio, ingeniero en Ciencias de la Computación. Programación, Diseño y Animación 3D." />
-        <meta property="og:image" content="/public/assets/asr.png" />
+        <meta property="og:image" content="/public/assets/image.jpg" />
       </Head>
       <Component {...pageProps} />
     </main>
