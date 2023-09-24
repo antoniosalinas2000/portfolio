@@ -14,7 +14,7 @@ export default function Home() {
       className="flex min-h-screen flex-col items-center justify-start bg-black text-white">
       <Header currentPage="Inicio" />
       {/*First view */}
-      <div className="flex flex-col lg:flex-row w-full py-8 lg:mb-6">
+      <div className="flex flex-col lg:flex-row w-full py-8 lg:mb-12">
         {/*Titulos, descripción */}
         <div className="flex flex-col w-full px-4 lg:px-16 gap-y-8">
           <h1 className="text-5xl lg:text-6xl font-lexend font-semibold w-full lg:w-[450px]">
