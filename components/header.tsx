@@ -4,10 +4,13 @@ import { useState } from 'react';
 
 export default function Header(props: {currentPage:string }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const goHome = () => {
+        window.location.href = '/';
+    }
 
     return (
         <div className="flex flex-row w-full items-center justify-between px-4 lg:px-16 py-3 lg:py-6">
-            <h1 className="text-2xl lg:text-4xl font-iceland">Antonio Salinas</h1>
+            <h1 className="text-2xl lg:text-4xl font-iceland cursor-pointer" onClick={goHome}>Antonio Salinas</h1>
             <div className="flex flex-row items-center justify-center gap-x-4 relative">
                 <h1 className="text-2xl font-iceland">{props.currentPage}</h1>
                 <div className="relative">
