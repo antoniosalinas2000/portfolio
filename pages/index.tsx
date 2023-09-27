@@ -23,8 +23,7 @@ export default function Home() {
           </p>
 
           <p className='text-lg font-iceland text-white/50 w-full'>
-            Estudiante de Ciencias de la Computación (8vo ciclo) en la Universidad Peruana de Ciencias Aplicadas,
-            con una fuerte pasión por la tecnología y el estudio del comportamiento humano. Experiencia en start-ups,
+            Full-stack developer con una fuerte pasión por la tecnología y el estudio del comportamiento humano. Experiencia en start-ups,
             centrado en programación, testing y desarrollo de plataformas web y videojuegos.
             Personalidad polifacética y empática, con un creciente interés en inteligencia artificial.
           </p>
